@@ -1,22 +1,24 @@
 //
-//  ViewController.m
+//  ZATempViewController.m
 //  ZASearch
 //
 //  Created by 纵昂 on 2017/3/6.
 //  Copyright © 2017年 纵昂. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ZATempViewController.h"
+#import "PYSearchConst.h"
 
-@interface ViewController ()
+@interface ZATempViewController ()
 
 @end
 
-@implementation ViewController
-
+@implementation ZATempViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"SearchResultViewController";
+    self.view.backgroundColor = PYRandomColor;
 }
 
 - (void)didReceiveMemoryWarning {

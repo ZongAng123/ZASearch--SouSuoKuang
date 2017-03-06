@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ZASearchExampleController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    if (!self.window) {
+        UIWindow *keyWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        keyWindow.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ZASearchExampleController alloc] init]];
+        [keyWindow makeKeyAndVisible];
+        self.window = keyWindow;
+    }
     return YES;
 }
 

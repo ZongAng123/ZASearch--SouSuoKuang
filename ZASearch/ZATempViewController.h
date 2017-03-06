@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ZATempViewController.h
 //  ZASearch
 //
 //  Created by 纵昂 on 2017/3/6.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ZATempViewController : UIViewController
 
 @end
-
